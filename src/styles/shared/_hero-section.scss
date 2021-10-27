@@ -1,0 +1,121 @@
+.hero-div {
+  width: 100%;
+  background-image: url("../../assets/images/topbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  background-position: center -18rem;
+
+  .top-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+
+    .logo-div {
+      img {
+        width: 8rem;
+        border-radius: 1.3rem;
+      }
+    }
+
+    .logo-div:hover {
+      opacity: 0.8;
+    }
+    .logo-div:active {
+      opacity: 0.6;
+    }
+
+    .connect-div {
+      background: blue;
+      border-radius: 1rem;
+      padding: 0.7rem 1.2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    }
+
+    .connect-div:hover {
+      opacity: 0.8;
+    }
+
+    .connect-div:active {
+      opacity: 0.6;
+    }
+  }
+
+  .text-div {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+
+    .header-text {
+      font-size: 3.5rem;
+      font-weight: 700;
+      z-index: 999;
+
+      .animation-text {
+        color: blue;
+      }
+    }
+
+    .slogan-text {
+      font-size: 1.2rem;
+      color: darkgray;
+      margin-top: 0.5rem;
+      z-index: 999;
+    }
+  }
+
+  .play-btn {
+  }
+
+  .social-icons {
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: -14rem;
+    left: 2rem;
+
+    .each-icon:hover {
+      opacity: 0.8;
+    }
+    .each-icon:active {
+      opacity: 0.6;
+    }
+  }
+
+  .floating-nft {
+    position: absolute;
+    bottom: -27rem;
+    right: -16rem;
+    z-index: 1;
+    animation: bounce 2s ease-in-out infinite alternate-reverse;
+
+    img {
+      width: 70rem;
+      height: 35rem;
+      transform: rotate(10deg);
+    }
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0rem);
+    }
+    to {
+      transform: translateY(5px);
+    }
+  }
+}
